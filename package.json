@@ -1,0 +1,29 @@
+{
+  "name": "imagefinder",
+  "version": "1.0.0",
+  "description": "An app that uses NodeJs and Bing Search API to search images",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js --exec babel-node --"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yufrances90/ImageFinder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yufrances90/ImageFinder/issues"
+  },
+  "homepage": "https://github.com/yufrances90/ImageFinder#readme",
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  },
+  "dependencies": {
+    "azure-cognitiveservices-imagesearch": "^2.0.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "ms-rest-azure": "^2.6.0"
+  }
+}

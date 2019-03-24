@@ -24,6 +24,7 @@
     "azure-cognitiveservices-imagesearch": "^2.0.0",
     "babel-cli": "^6.26.0",
     "babel-preset-es2015": "^6.24.1",
+    "dotenv": "^7.0.0",
     "image-downloader": "^3.4.2",
     "ms-rest-azure": "^2.6.0"
   }

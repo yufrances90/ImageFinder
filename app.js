@@ -4,9 +4,9 @@ const Search = require('azure-cognitiveservices-imagesearch');
 const CognitiveServicesCredentials = require('ms-rest-azure').CognitiveServicesCredentials;
 
 const download = require('image-downloader');
+const msConfig = require('./config/index');
 
-//replace this value with your valid subscription key.
-let serviceKey = "efe1216476be4f66b16570dc933da6e0";
+const serviceKey = msConfig.SERVICE_KEY;
 
 const searchTerms = [
     "All colors glass bottles and jars",
@@ -27,12 +27,9 @@ const searchTerms = [
     "Plastic jugs: soda bottles, laundry detergent jugs"
 ];
 
-//instantiate the image search client 
-
 // let credentials = new CognitiveServicesCredentials(process.env.MY_API_KEY);
 let credentials = new CognitiveServicesCredentials(serviceKey);
 let imageSearchApiClient = new Search.ImageSearchClient(credentials);
-
 
 searchTerms.forEach(searchTerm => {
 
